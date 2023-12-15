@@ -55,8 +55,8 @@ class TitleText extends StatelessWidget {
   }
 }
 
-class ButtonText extends StatelessWidget {
-  const ButtonText(this.text, {super.key});
+class InitialText extends StatelessWidget {
+  const InitialText(this.text, {super.key});
   final String text;
 
   @override
@@ -64,8 +64,8 @@ class ButtonText extends StatelessWidget {
     return Text(
       text,
       style: GoogleFonts.lato(
-        color: const Color.fromARGB(255, 0, 0, 0),
-        fontSize: 15,
+        color: const Color.fromARGB(255, 172, 171, 171),
+        fontSize: 12,
         fontWeight: FontWeight.bold,
       ),
       textAlign: TextAlign.center,

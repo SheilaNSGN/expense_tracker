@@ -90,3 +90,39 @@ class QuestionText extends StatelessWidget {
     );
   }
 }
+
+class CalendarText extends StatelessWidget {
+  const CalendarText(this.text, {super.key});
+  final String text;
+
+  @override
+  Widget build(context) {
+    return Text(
+      text,
+      style: GoogleFonts.lato(
+        color: const Color.fromARGB(255, 0, 0, 0),
+        fontSize: 13,
+        fontWeight: FontWeight.bold,
+      ),
+      textAlign: TextAlign.center,
+    );
+  }
+}
+
+class ButtonText extends StatelessWidget {
+  const ButtonText(this.text, {super.key});
+  final String text;
+
+  @override
+  Widget build(context) {
+    return Text(
+      text,
+      style: GoogleFonts.lato(
+        color: const Color.fromARGB(255, 255, 255, 255),
+        fontSize: 15,
+        fontWeight: FontWeight.bold,
+      ),
+      textAlign: TextAlign.center,
+    );
+  }
+}
